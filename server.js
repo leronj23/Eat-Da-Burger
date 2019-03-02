@@ -17,7 +17,7 @@ app.use(express.json());
 // Sets up handlebars
 // =============================================================
 var exphbs = require('express-handlebars');
-app.engine("handlebars", exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // Static directory to be served
@@ -27,6 +27,7 @@ app.use(express.static('public'));
 // Controller
 // =============================================================
 require("./controllers/burgers_controller.js")(app);
+require("./routes/burgers_route.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
