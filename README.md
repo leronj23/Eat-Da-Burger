@@ -4,10 +4,10 @@ This application demonstrates a simple full stack application with a front end i
 
 The user may enter any burger name and add it to the menu. The initial burger entry is added as available on the menu and placed on the left column of the screen. The user may then eat any burger by clicking on the delete button, which moves it into the right column.
 
-![Eat-Da-Burger](https://github.com/leronj23/Eat-Da-Burger/blob/master/screenshot/Eat-Da-Burger.JPG)
-
 # Deployed URL
 https://damp-coast-43980.herokuapp.com/
+
+![Eat-Da-Burger](https://github.com/leronj23/Eat-Da-Burger/blob/master/screenshot/Eat-Da-Burger.JPG)
 
 # Technology used
 * Javascript
@@ -16,3 +16,4 @@ https://damp-coast-43980.herokuapp.com/
 * NPM
 * Handlebars
 * MySQL
+* Heroku
