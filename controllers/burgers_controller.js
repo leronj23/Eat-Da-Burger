@@ -6,24 +6,32 @@ var burger = require("../models/burger.js");
 module.exports = function (app) {
 
     // Add a Burger
-    // app.post("/api/add", function (req, res) {
+    app.post("/api/add", function (req, res) {
 
-    //     // console.log("Chirp Data:");
-    //     // console.log(req.body);
+        vals = req.body.burger;
+        console.log('req.body.vals', vals);
 
-    //     // Chirp.create({
-    //     //     author: req.body.author,
-    //     //     body: req.body.body,
-    //     //     created_at: req.body.created_at
-    //     // }).then(function (results) {
-    //     //     // `results` here would be the newly created chirp
-    //     //     res.end();
-    //     // });
+        // Get all Burgers
+        burger.insertOne(vals, function (data) {
+            console.log("data", data);
+            res.json({ id: data.insertId });
+        });
+    });
 
-    // });
 
     // Devour a Burger
-    // app.post("/api/devour", function (req, res) {
+    app.post("/api/devour", function (req, res) {
 
-    // });
+        var condition = "id = " + req.body.id;
+        console.log('condition', condition);
+
+        // Update Burger
+        burger.updateOne({
+            devoured: true
+        },
+            condition, function (data) {
+                console.log("data", data);
+                res.json({ id: data.insertId });
+            });
+    });
 };

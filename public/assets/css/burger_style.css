@@ -1,0 +1,7 @@
+  .delete {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 12px;
+    transform: translate(0%, -50%);
+  }

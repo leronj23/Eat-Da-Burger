@@ -4,15 +4,25 @@ var orm = require("../config/orm.js");
 var burger = {
 
     // Display all rows
-    all: function (cb) {
-        orm.all("burgers", function (res) {
+    selectAll: function (cb) {
+        orm.selectAll("burgers", function (res) {
             cb(res);
         });
     },
 
     // Add new burger
-    create: function (vals, cb) {
-        orm.create("burgers", ["burger_name", "devoured"], vals, function (res) {
+    insertOne: function (vals, cb) {
+        console.log('vals', vals);
+        orm.insertOne("burgers", ["burger_name"], vals, function (res) {
+            cb(res);
+        });
+    },
+
+    // Add new burger
+    updateOne: function (objColVals, condition, cb) {
+        console.log('condition', objColVals, condition);
+
+        orm.updateOne("burgers", objColVals, condition, function (res) {
             cb(res);
         });
     },
