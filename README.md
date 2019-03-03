@@ -8,7 +8,7 @@ The user may enter any burger name and add it to the menu. The initial burger en
 https://desolate-stream-14777.herokuapp.com/
 
 
-![Eat-Da-Burger](https://github.com/leronj23/Friend-Finder/blob/master/screenshot/friend-finder.JPG)
+![Eat-Da-Burger](https://github.com/leronj23/Eat-Da-Burger/blob/master/screenshot/Eat-Da-Burger.JPG)
 
 # Technology used
 * Javascript
