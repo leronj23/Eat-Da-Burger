@@ -7,7 +7,7 @@ The user may enter any burger name and add it to the menu. The initial burger en
 ![Eat-Da-Burger](https://github.com/leronj23/Eat-Da-Burger/blob/master/screenshot/Eat-Da-Burger.JPG)
 
 # Deployed URL
-https://desolate-stream-14777.herokuapp.com/
+https://damp-coast-43980.herokuapp.com/
 
 # Technology used
 * Javascript
