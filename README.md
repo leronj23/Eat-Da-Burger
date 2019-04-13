@@ -12,6 +12,7 @@ https://damp-coast-43980.herokuapp.com/
 # Technology used
 * Javascript
 * Express.js
+* Bootstrap
 * Node.js
 * NPM
 * Handlebars
